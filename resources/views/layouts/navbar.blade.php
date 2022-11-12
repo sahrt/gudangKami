@@ -26,7 +26,7 @@
         @auth
         <li class="dropdown"><a href="#"><span>Anggota <br> JPC/Alumni</span> <i class="bi bi-chevron-down"></i></a>
           <ul>
-            <li><a href="">Dashboard</a></li>
+            <li><a href="{{ route('profile') }}">Profile</a></li>
             <li><a href="{{ route('logout') }}">Logout</a></li>
           </ul>
         @else
