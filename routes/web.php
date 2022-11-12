@@ -19,3 +19,4 @@ Route::get('/', function () {
 })->name('beranda');
 
 Route::get('/lowongan', [LowonganController::class,  'index'])->name('view-lowongan');
+Route::get('/lowongan/detile/{id}', [LowonganController::class,  'detile']);
