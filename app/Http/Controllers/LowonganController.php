@@ -16,6 +16,6 @@ class LowonganController extends Controller
     public function detile($id)
     {
         $table = lowongan::find($id);
-        return view('.detile', ['lowongan' => $table]);
+        return view('lowongan.detile', ['lowongan' => $table]);
     }
 }

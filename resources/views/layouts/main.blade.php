@@ -9,6 +9,10 @@
   <meta content="" name="description">
   <meta content="" name="keywords">
 
+  {{-- css bootstrap --}}
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous"> 
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.1/font/bootstrap-icons.css">
+
   <!-- Favicons -->
   {{--<link href="assets/img/favicon.png" rel="icon"> --}}
   <link href="assets/img/logo.png" rel="icon">
@@ -27,6 +31,7 @@
 
   <!-- Template Main CSS File -->
   <link href="assets/css/style.css" rel="stylesheet">
+  <link href="assets/css/login-style.css" rel="stylesheet">
 
   <!-- =======================================================
   * Template Name: Arsha - v4.9.1
@@ -41,6 +46,7 @@
 
     @yield('container')
 
+    @include('layouts.footer')
   
   <!-- Vendor JS Files -->
   <script src="assets/vendor/aos/aos.js"></script>
@@ -54,6 +60,8 @@
   <!-- Template Main JS File -->
   <script src="assets/js/main.js"></script>
 
+  {{-- js bootstrap --}}
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
 </body>
 
 </html>

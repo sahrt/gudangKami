@@ -18,18 +18,26 @@
         </li>
         <li class="dropdown"><a href="#"><span>Magang <br> BUMN</span> <i class="bi bi-chevron-down"></i></a>
           <ul>
-            <li><a href="#">Masuk</a></li>
-            <li><a href="#">Daftar</a></li>
+            <li><a href="{{ route('login') }}">Masuk</a></li>
+            <li><a href="{{ route('register') }}">Daftar</a></li>
           </ul>
         </li>
         <li><a class="nav-link scrollto" href="{{ route('view-lowongan') }}">Lowongan</a></li>
+        @auth
         <li class="dropdown"><a href="#"><span>Anggota <br> JPC/Alumni</span> <i class="bi bi-chevron-down"></i></a>
           <ul>
-            <li><a href="#">Masuk</a></li>
-            <li><a href="#">Daftar Anggota</a></li>
+            <li><a href="">Dashboard</a></li>
+            <li><a href="{{ route('logout') }}">Logout</a></li>
+          </ul>
+        @else
+        <li class="dropdown"><a href="#"><span>Anggota <br> JPC/Alumni</span> <i class="bi bi-chevron-down"></i></a>
+          <ul>
+            <li><a href="{{ route('login') }}">Masuk</a></li>
+            <li><a href="{{ route('register') }}">Daftar Anggota</a></li>
           </ul>
         </li>
-        <li><a class="nav-link scrollto" href="#contact">Tracer <br> Study</a></li>
+        @endauth
+        <li><a class="nav-link scrollto" href="">Tracer <br> Study</a></li>
         <li class="dropdown"><a href="#"><span>Perusahaan</span> <i class="bi bi-chevron-down"></i></a>
           <ul>
             <li><a href="#">Kerjasama Perusahaan</a></li>
